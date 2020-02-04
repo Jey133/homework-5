@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>hometask5</title>
+</head>
+<body>
+
+	<script>
+
+	function getResult(a, b, symbol) {
+		if (symbol === "+") {
+			return  a + b;
+		}
+		else if (symbol === "-") {
+			return  a - b;
+		}
+		else if (symbol === "*") {
+			return  a * b;
+		}
+		else if (symbol === "/") {
+			return  a / b;
+		}
+		else {
+			return "Sorry";
+		}
+	}
+		var result = getResult(a, b, symbol);
+
+	</script>
+
+	<script>
+		
+	var string = "Hello";
+
+	function foo(str, charToRemove) {
+		var newString = "";
+		for(var i = 0; i < str.length; i++) {
+			if (charToRemove.includes(str[i])) {
+				continue;
+			} else {
+				newString += str[i];
+			}
+		}
+
+		return newString;
+	}
+	
+	console.log(foo(string, "o"));
+	console.log(foo(string, "lo"));
+	console.log(foo(string, ["o", "e"]));
+
+	</script>
+	
+</body>
+</html>
